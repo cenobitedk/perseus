@@ -1,6 +1,6 @@
 import { render } from "preact";
+import { css, injectGlobal } from "@emotion/css";
 import { App } from "./app";
-import { injectGlobal } from "@emotion/css";
 
 injectGlobal`
   @font-face {
@@ -29,6 +29,24 @@ injectGlobal`
     color: lightgrey;
     font-family: "EurostileExt", Arial, Helvetica, sans-serif;
   }
+
+  h2 span, h3 span, h4 span {
+    background-color: lightgrey;
+    padding: 0 0.4rem;
+    color: black;
+    border-radius: 1px;
+  }
+  h2, h3, h4 {
+    span + span {
+      margin-left: 0.5em;
+    }
+  }
 `;
 
-render(<App />, document.getElementById("app")!);
+const main = document.querySelector("main");
+const style = css`
+  margin: 0 auto 6rem;
+`;
+main?.classList.add(style);
+
+render(<App />, main!);

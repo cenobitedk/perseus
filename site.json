@@ -1,0 +1,79 @@
+{
+  "menu": {
+    "links": [
+      {
+        "title": "Releases",
+        "to": "#releases",
+        "description": ""
+      },
+      {
+        "title": "Live",
+        "to": "#live",
+        "description": ""
+      },
+      {
+        "title": "Biography",
+        "to": "#bio",
+        "description": ""
+      },
+      {
+        "title": "Contact",
+        "to": "#contact",
+        "description": ""
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "releases",
+      "id": "releases",
+      "menu": [
+        {
+          "title": "Surveillance",
+          "to": "#sur",
+          "description": ""
+        },
+        {
+          "title": "The Legacy Collection, Vol II",
+          "to": "#tlcii",
+          "description": ""
+        },
+        {
+          "title": "The Legacy Collection, Vol I",
+          "to": "#tlci",
+          "description": ""
+        },
+        {
+          "title": "The Rigel Axiom",
+          "to": "#tra",
+          "description": ""
+        },
+        {
+          "title": "Aeternus",
+          "to": "#ae",
+          "description": ""
+        },
+        {
+          "title": "Throttle Up",
+          "to": "#tu",
+          "description": ""
+        },
+        {
+          "title": "Flashbacks",
+          "to": "#flb",
+          "description": ""
+        },
+        {
+          "title": "Escape Velocity",
+          "to": "#ev",
+          "description": ""
+        },
+        {
+          "title": "Fireburner",
+          "to": "#fib",
+          "description": ""
+        }
+      ]
+    }
+  ]
+}
