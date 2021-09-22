@@ -1,14 +1,25 @@
+import { css } from "@emotion/css";
+
 import { Section } from "./components/section";
 import { Submenu, SubmenuItem } from "./components/submenu";
 import { Release } from "./components/release";
 
-import { discography } from "../contents.json";
+import contents from "../contents";
+
+const sectionStyle = css`
+  padding-top: 0;
+`;
+const headingStyle = css`
+  margin-top: 0;
+  padding-top: 5vw;
+`;
 
 export function Discography() {
+  const { discography } = contents;
   return (
     <>
-      <Section>
-        <h2 id="releases">
+      <Section className={sectionStyle}>
+        <h2 id="releases" className={headingStyle}>
           <span>RELEASES</span>
         </h2>
         <Submenu>

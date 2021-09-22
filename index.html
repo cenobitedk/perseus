@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/img/favicon.svg" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DYNATRON</title>
     <meta
@@ -14,375 +13,63 @@
       name="keywords"
       content="dynatron, synthwave, spacewave, retrowave, outrun"
     />
+    <!-- <link rel="icon" href="/favicon.svg" type="image/svg+xml"> -->
+    <link
+      rel="alternate icon"
+      href="/favicon.ico"
+      type="image/png"
+      sizes="16x16"
+    />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+    <link rel="mask-icon" href="/favicon.svg" color="#2d3034" />
+    <meta name="theme-color" content="#2d3034" />
 
-    <link rel="preload" as="font" />
-
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <link
+      rel="preconnect"
+      crossorigin="anonymous"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      crossorigin="anonymous"
+      href="https://fonts.gstatic.com"
+    />
+    <link
+      rel="stylesheet"
+      crossorigin="anonymous"
+      href="https://fonts.googleapis.com/css2?family=Michroma&display=swap"
+    />
     <style>
-      .section {
-        padding: 5vw;
-        margin: 0 auto;
-        max-width: calc(43rem);
-      }
-      @media screen and (min-width: 970px) {
-        .section {
-          max-width: calc(86rem + 5vw);
-        }
-      }
-
-      nav {
-        text-align: center;
-        text-shadow: 0 0 2px black;
-      }
-      .menu {
+      html,
+      body {
         margin: 0;
-        padding: 0;
+        min-height: 100vh;
+        min-width: 100vw;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        position: relative;
       }
-      .menu_item {
-        display: inline-block;
-        padding: 0.5rem 1rem;
+      html {
+        background-color: #111111;
       }
-      .hero_top {
-        background-image: url(./src/img/D-for-Dynatron.png);
-        background-size: 8vw;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 16vw;
+      body {
+        color: lightgrey;
+        font-family: "Michroma", "EurostileExt", Arial, Helvetica, sans-serif;
+        letter-spacing: 0.5px;
+        font-size: clamp(0.75rem, 0.6591rem + 0.4545vw, 1rem);
       }
-      h2 ~ h2 {
-        margin-top: 6rem;
-      }
-      h2 span,
-      h3 span,
-      h4 span {
-        background-color: lightgrey;
-        padding: 0 0.4rem;
-        color: black;
-        border-radius: 1px;
-      }
-      a {
-        text-decoration: none;
-        color: inherit;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
-      small ul {
-        margin: 0;
-        padding: 0;
-      }
-      small li {
-        margin-right: 2rem;
-        margin-bottom: 1rem;
-        display: inline-block;
-      }
-
-      .release {
-        padding: 5vw;
-        padding-bottom: 4rem;
-        background-position: bottom;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        font-size: 90%;
-      }
-      .column {
-        margin: 0 auto;
-        flex: auto;
-        max-width: 43rem;
-      }
-      .column.cover {
-        margin-bottom: 5%;
-      }
-
-      @media screen and (min-width: 970px) {
-        .release {
-          flex-direction: row;
-        }
-        .column {
-          margin-left: 2.5vw;
-        }
-        .column.cover {
-          margin-right: 2.5vw;
-          margin-left: auto;
-          flex: none;
-          width: 50%;
-        }
-      }
-
-      .release img {
-        width: 100%;
-        height: auto;
-      }
-      .release h3 {
-        margin-top: 3px;
-      }
-      .release h4 {
-        margin-top: 3rem;
-      }
-      .tracklist {
-        padding: 0;
-        max-width: 43rem;
-      }
-      .tracklist li {
-        display: flex;
-      }
-      .tracklist li + li {
-        margin-top: 0.5rem;
-      }
-      .tracklist span:nth-child(1) {
-        padding-left: 1rem;
-        width: 2.5rem;
-        flex: none;
-      }
-      .tracklist span:nth-child(even) {
-        flex-grow: 1;
-      }
-      .tracklist span:nth-child(even) small,
-      .tracklist span:nth-child(3) {
-        color: #a0a0a0;
-        text-shadow: 0 0 1px black;
-      }
-      .tracklist span:nth-child(3) {
-        padding-left: 1rem;
+      html:before {
+        content: " ";
+        position: absolute;
+        inset: 0;
+        background-color: #111111;
       }
     </style>
   </head>
   <body>
-    <main>
-      <div class="section">
-        <nav>
-          <ul class="menu">
-            <li class="menu_item"><a href="#releases">RELEASES</a></li>
-            <li class="menu_item"><a href="#live">LIVE</a></li>
-            <li class="menu_item"><a href="#bio">BIOGRAPHY</a></li>
-            <li class="menu_item"><a href="#contact">CONTACT</a></li>
-          </ul>
-        </nav>
-
-        <div class="hero hero_top"></div>
-
-        <h2 id="releases"><span>RELEASES</span></h2>
-        <small>
-          <ul>
-            <li><a href="#sur">SURVEILLANCE</a></li>
-            <li><a href="#tlcii">THE LEGACY COLLECTION, VOL II</a></li>
-            <li><a href="#tlci">THE LEGACY COLLECTION, VOL I</a></li>
-            <li><a href="#tra">THE RIGEL AXIOM</a></li>
-            <li><a href="#ae">AETERNUS</a></li>
-            <li><a href="#tu">THROTTLE UP</a></li>
-            <li><a href="#flb">FLASHBACKS</a></li>
-            <li><a href="#ev">ESCAPE VELOCITY</a></li>
-            <li><a href="#fib">FIREBURNER</a></li>
-          </ul>
-        </small>
-      </div>
-
-      <div
-        id="sur"
-        class="release"
-        style="background-image: url(./src/img/releases/s_sur_bg.jpg)"
-      >
-        <div class="column cover">
-          <img
-            src="./src/img/releases/s_sur.jpg"
-            alt="front cover for Surveillance (single)"
-            width="700"
-            height="700"
-          />
-        </div>
-
-        <div class="column">
-          <h3><span>SURVEILLANCE</span> <small>(SINGLE)</small></h3>
-
-          <p>Released: December 1, 2020</p>
-          <p>
-            Also on Dream Electric 3 compilation (vinyl only) by Electric Dream
-            Records, November 2020.
-          </p>
-
-          <h4><span>TRACKLIST</span></h4>
-          <ol class="tracklist">
-            <li><span>1.</span><span>Surveillance</span><span>4:52</span></li>
-          </ol>
-
-          <h4><span>CREDITS</span></h4>
-          <p>
-            Composed and recorded by Jeppe Hasseriis.<br />
-            Produced by Jeppe Hasseriis.<br />
-            Mastered at The Constellation.<br />
-            <br />
-            Artwork by Jeppe Hasseriis.
-          </p>
-
-          <h4><span>LISTEN</span> <span>BUY</span></h4>
-          <!-- <iframe
-            title="Surveillance on bandcamp"
-            style="border: 0; width: 100%; height: 120px"
-            src="https://bandcamp.com/EmbeddedPlayer/track=3689966675/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/artwork=small/transparent=true/"
-            seamless
-            ><a href="https://music.dynatronsynth.com/track/surveillance"
-              >Surveillance by Dynatron</a
-            ></iframe
-          > -->
-        </div>
-      </div>
-
-      <div
-        id="tlcii"
-        class="release"
-        style="background-image: url(./src/img/releases/a_tlc_ii_bg.jpg)"
-      >
-        <div class="column cover">
-          <img
-            src="./src/img/releases/a_tlc_ii.jpg"
-            alt="front cover for The Legacy Collection, Vol II"
-            width="700"
-            height="700"
-          />
-        </div>
-
-        <div class="column">
-          <h3><span>THE LEGACY COLLECTION</span> <small>VOL II</small></h3>
-          <p>Released: December 20, 2016</p>
-          <p>
-            "The Legacy Collection, Vol II" compiles all compilation tracks and
-            B-sides from 2012–2015.
-          </p>
-
-          <h4><span>TRACKLIST</span></h4>
-          <ol class="tracklist">
-            <li>
-              <span>1.</span>
-              <span>
-                Stars of the Night<br />
-                <small>
-                  Originally from “Futura Compilation", Aphasia Records, 2012.
-                </small>
-              </span>
-              <span>5:48</span>
-            </li>
-            <li>
-              <span>2.</span>
-              <span>
-                Dust of the Saturn<br />
-                <small>
-                  Originally from “The 80's Dream Compilation Tape, Vol. 2",
-                  NewRetroWave, 2013.
-                </small>
-              </span>
-              <span>5:20</span>
-            </li>
-            <li>
-              <span>3.</span>
-              <span>
-                Jovian Giants<br />
-                <small>
-                  Originally from "Artificial Afterlife Compilation", Aphasia
-                  Records, 2015.
-                </small>
-              </span>
-              <span>5:37</span>
-            </li>
-            <li>
-              <span>4.</span>
-              <span>
-                Out of the Center<br />
-                <small>
-                  Originally from "PLUTO: A Synth Odyssey", New Horizons
-                  Records, 2015.
-                </small>
-              </span>
-              <span>5:51</span>
-            </li>
-            <li>
-              <span>5.</span>
-              <span>
-                Unquestionable Judgement<br />
-                <small>
-                  Originally from "RUNNING ALL NIGHT", Wave Runner Records,
-                  2014.
-                </small>
-              </span>
-              <span>4:50</span>
-            </li>
-            <li>
-              <span>6.</span>
-              <span>
-                Excellerator<br />
-                <small>
-                  Originally from "Outrun Europa Compilation", Outrun Europa,
-                  2013.
-                </small>
-              </span>
-              <span>5:43</span>
-            </li>
-            <li>
-              <span>7.</span>
-              <span>
-                Electromagnetic (bonus)<br />
-                <small>
-                  Originally from "The Finish Line", Rad Rush Records, 2016.<br />
-                  Previously only available on vinyl.
-                </small>
-              </span>
-              <span>5:12</span>
-            </li>
-            <li>
-              <span>8.</span>
-              <span>
-                Visions (bonus)<br />
-                <small> Previously unreleased. </small>
-              </span>
-              <span>4:52</span>
-            </li>
-          </ol>
-
-          <h4><span>CREDITS</span></h4>
-          <p>
-            All track composed by Jeppe Hasseriis.<br />
-            Recorded, mixed and mastered by Jeppe Hasseriis.<br />
-            Artwork by Jeppe Hasseriis.
-          </p>
-
-          <h4><span>LISTEN</span> <span>BUY</span></h4>
-          <!-- <iframe
-            title="The Legacy Collection, Vol II on bandcamp"
-            style="border: 0; width: 100%; height: 120px"
-            src="https://bandcamp.com/EmbeddedPlayer/album=3524216499/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/artwork=small/transparent=true/"
-            seamless
-            ><a
-              href="https://music.dynatronsynth.com/album/the-legacy-collection-vol-ii-2"
-              >The Legacy Collection, Vol II by Dynatron</a
-            ></iframe
-          > -->
-        </div>
-      </div>
-
-      <div class="section">
-        <h2 id="live"><span>LIVE</span></h2>
-        <small>
-          <ul>
-            <li><a href="#live-2021">2021</a></li>
-            <li><a href="#live-archive">2016 – 2020</a></li>
-          </ul>
-        </small>
-      </div>
-
-      <div class="section">
-        <h2 id="bio"><span>BIOGRAPHY</span></h2>
-        <small>
-          <ul>
-            <li><a href="#bio-intro">INTRODUCTION</a></li>
-            <li><a href="#bio-2021">2021</a></li>
-            <li><a href="#bio-archive">2016 – 2020</a></li>
-          </ul>
-        </small>
-      </div>
-      <div class="section">
-        <h2 id="contact"><span>CONTACT</span></h2>
-      </div>
-    </main>
+    <main></main>
 
     <script type="module" src="/src/main.tsx"></script>
   </body>
