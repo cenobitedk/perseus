@@ -303,7 +303,12 @@ export function Release({ release }: { release: TRelease }): JSX.Element {
         </p>
 
         {release.links.map((link) => (
-          <a href={link.link} target="_blank" className={styles.buyButton}>
+          <a
+            href={link.link}
+            target="_blank"
+            rel="noopener"
+            className={styles.buyButton}
+          >
             {link.title}
           </a>
         ))}
@@ -331,7 +336,9 @@ export function Release({ release }: { release: TRelease }): JSX.Element {
             data-src={release.bcIframe.src}
             seamless
           >
-            <a href={release.bcIframe.link}>{release.bcIframe.title}</a>
+            <a href={release.bcIframe.link} rel="noopener">
+              {release.bcIframe.title}
+            </a>
           </iframe>
         </details>
       </div>

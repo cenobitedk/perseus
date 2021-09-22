@@ -103,12 +103,12 @@ export function Header() {
       {/* <Hero /> */}
       <div className={styles.iframeContainer}>
         <iframe
+          title="Dynatron - Origins - Youtube"
           width="100%"
           height="100%"
           src="https://www.youtube-nocookie.com/embed/PSzNvha6MpM"
           frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullscreen
+          allowFullScreen
         />
       </div>
       <Section className={styles.albumTeaser}>
@@ -123,6 +123,7 @@ export function Header() {
         <a
           href="https://www.blood-music.com/store/"
           target="_blank"
+          rel="noopener"
           className={styles.buyButton}
         >
           Pre-order

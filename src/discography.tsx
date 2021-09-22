@@ -4,7 +4,7 @@ import { Section } from "./components/section";
 import { Submenu, SubmenuItem } from "./components/submenu";
 import { Release } from "./components/release";
 
-import contents from "../contents";
+import contents from "./contents";
 
 const sectionStyle = css`
   padding-top: 0;
