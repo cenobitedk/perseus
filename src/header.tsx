@@ -61,8 +61,8 @@ const styles = {
     width: 100vw;
     height: 56.25vw;
     margin: 0 auto 14vh;
-    max-width: 960px;
-    max-height: 540px;
+    max-width: 1080px;
+    max-height: calc(9 / 16 * 1080px);
   `,
   video: css`
     position: absolute;
