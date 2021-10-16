@@ -45,12 +45,24 @@ const styles = {
       background-repeat: no-repeat;
     }
   `,
+  coverContainer: css`
+    width: 100vw;
+    height: 100vw;
+    margin: 0 auto;
+    max-width: 900px;
+    max-height: 900px;
+  `,
+  image: css`
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0.5rem 2rem #0000005e;
+  `,
   iframeContainer: css`
     width: 100vw;
     height: 56.25vw;
-    margin: 0 auto;
-    max-width: 1600px;
-    max-height: 900px;
+    margin: 0 auto 14vh;
+    max-width: 960px;
+    max-height: 540px;
   `,
   video: css`
     position: absolute;
@@ -64,7 +76,6 @@ const styles = {
     text-align: center;
     font-size: 120%;
     padding: 7vh;
-    padding-bottom: 14vh;
   `,
   title: css`
     font-size: 150%;
@@ -75,7 +86,7 @@ const styles = {
     border: 2px solid #ff6633;
     border-radius: 3px;
     padding: 0 0.5em 0.15em;
-    margin: 0.5em 0.5em 0 0;
+    margin: 0.5em 0 0;
     color: #ff6633;
     font-weight: bold;
     text-transform: uppercase;
@@ -96,11 +107,61 @@ const styles = {
   `,
 };
 
+function getImageUrl(filename: string): string {
+  return new URL(`./assets/${filename}`, import.meta.url).href;
+}
+
 export function Header() {
   return (
     <div className={styles.header}>
       <Menu />
       {/* <Hero /> */}
+      {/* <div className={styles.iframeContainer}>
+        <iframe
+          title="Dynatron - Origins - Youtube"
+          width="100%"
+          height="100%"
+          src="https://www.youtube-nocookie.com/embed/PSzNvha6MpM"
+          frameBorder="0"
+          allowFullScreen
+        />
+      </div> */}
+      <div className={styles.coverContainer}>
+        <img
+          loading="lazy"
+          src={getImageUrl("a_or.jpg")}
+          alt={`front cover for Origins`}
+          width="700"
+          height="700"
+          className={styles.image}
+        />
+      </div>
+      <Section className={styles.albumTeaser}>
+        New album <br />
+        <span className={styles.title}>ORIGINS</span>
+        <br />
+        <br />
+        <a
+          href="https://ffm.to/dynatronorigins"
+          target="_blank"
+          rel="noopener"
+          className={styles.buyButton}
+        >
+          LISTEN NOW
+        </a>
+        <br />
+        <a
+          href="https://www.blood-music.com/store/"
+          target="_blank"
+          rel="noopener"
+          className={styles.buyButton}
+        >
+          BUY NOW
+        </a>
+        <br />
+        <small>(CD / VINYL)</small>
+        <br />
+      </Section>
       <div className={styles.iframeContainer}>
         <iframe
           title="Dynatron - Origins - Youtube"
@@ -111,24 +172,6 @@ export function Header() {
           allowFullScreen
         />
       </div>
-      <Section className={styles.albumTeaser}>
-        New album <br />
-        <span className={styles.title}>ORIGINS</span>
-        <br />
-        <br /> Release date:
-        <br />
-        October 15, 2021
-        <br />
-        <br />
-        <a
-          href="https://www.blood-music.com/store/"
-          target="_blank"
-          rel="noopener"
-          className={styles.buyButton}
-        >
-          Pre-order
-        </a>
-      </Section>
     </div>
   );
 }
