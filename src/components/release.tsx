@@ -21,6 +21,7 @@ type TRelease = {
   type: string;
   format: string;
   releaseDate: string;
+  label: string;
   credits: TText;
   tracklist: TTrack[];
   linerNotes: TText;
@@ -300,6 +301,8 @@ export function Release({ release }: { release: TRelease }): JSX.Element {
           Type: {release.type}
           <br />
           Format: {release.format}
+          <br />
+          Label: {release.label}
         </p>
 
         {release.links.map((link) => (

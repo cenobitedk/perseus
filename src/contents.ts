@@ -7,6 +7,7 @@ export default {
       type: "Single",
       format: "vinyl, digital",
       releaseDate: "December 1, 2020",
+      label: "Blood Music / Electric Dream Records",
       linerNotes: [
         "Also on Dream Electric 3 compilation (vinyl only) by Electric Dream Records, November 2020.",
       ],
@@ -57,6 +58,7 @@ export default {
       type: "Compilation",
       format: "vinyl, cd, digital",
       releaseDate: "December 20, 2016",
+      label: "Blood Music",
       credits: [
         [
           "All track composed by Jeppe Hasseriis.",
@@ -155,6 +157,7 @@ export default {
       type: "Compilation",
       format: "vinyl, cd, digital",
       releaseDate: "December 20, 2016",
+      label: "Blood Music",
       credits: [
         [
           "All track composed by Jeppe Hasseriis.",
@@ -250,6 +253,7 @@ export default {
       type: "EP",
       format: "vinyl, digital",
       releaseDate: "November 4, 2016",
+      label: "Blood Music",
       credits: [
         "All music composed, performed and produced by Jeppe Hasseriis.",
         "Design and layout by Jeppe Hasseriis.",
@@ -317,6 +321,7 @@ export default {
       type: "album",
       format: "vinyl, cd, cassette, digital",
       releaseDate: "September 4, 2015",
+      label: "Blood Music / Aphasia Records",
       credits: [
         "All music composed, produced and mastered by Jeppe Hasseriis.",
         "Artwork and design by Jeppe Hasseriis. Additional 3D modelling by VHS Glitch.",
@@ -412,6 +417,7 @@ export default {
       type: "EP",
       format: "vinyl",
       releaseDate: "September 25, 2014",
+      label: "Rad Rush Records",
       credits: [
         "All tracks written and produced by Dynatron.",
         "Cover art illustration by Jonas Pihlgren.",
@@ -475,6 +481,7 @@ export default {
       type: "EP",
       format: "digital",
       releaseDate: "May 10, 2013",
+      label: "Aphasia Records",
       credits: [
         "All music composed, mixed and mastered by Jeppe Hasseriis.",
         "Cover artwork by George Gold.",
@@ -547,6 +554,7 @@ export default {
       type: "album",
       format: "vinyl, cd, cassette, digital",
       releaseDate: "November 22, 2012",
+      label: "Blood Music / Aphasia Records",
       credits: [
         "Composed, mixed and mastered by Jeppe Hasseriis. Artwork and design by Jeppe Hasseriis.",
         "Thanks to Michael Brun and Aphasia Records, Richard Owen, Rick Shithouse and Thomas Barrandon.",
@@ -628,6 +636,7 @@ export default {
       type: "EP",
       format: "digital",
       releaseDate: "September 8, 2012",
+      label: "(self-release)",
       credits: [
         "Composed, arranged, mixed and mastered by Jeppe Hasseriis.",
         "Track 3 remixed by Thomas Barrandon.",
