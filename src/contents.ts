@@ -2,9 +2,71 @@ export default {
   biography: [],
   discography: [
     {
+      title: "Origins",
+      id: "origins",
+      type: "album",
+      format: "vinyl, cd, digital",
+      releaseDate: "October 15, 2021",
+      label: "Blood Music",
+      linerNotes: [],
+      credits: [
+        [
+          "All music composed and produced by Jeppe Hasseriis.",
+          "Recorded, mixed and mastered at The Constellation.",
+        ],
+        [
+          "Artwork by Baran Sarpar and Starkiteckt Designs.",
+          "Design and layout by Jeppe Hasseriis.",
+        ],
+        "Thanks to: Anne Kirstine, Norh, Brian & family, Kimi & Starforce, Blood Music, Martin & Code Elektro, Brian & Electric Dream Records, all bands I have collaborated and shared the stage with, last but not least all the fans who continue to show never-ending support. Thank you!",
+      ],
+      tracklist: [
+        { title: "A New Place", playtime: "1:36", linerNotes: "" },
+        { title: "Close Encounter", playtime: "6:20", linerNotes: "" },
+        { title: "Origins", playtime: "6:28", linerNotes: "" },
+        { title: "The Portal", playtime: "5:20", linerNotes: "" },
+        { title: "Tumbling Upwards", playtime: "4:34", linerNotes: "" },
+        { title: "Future", playtime: "5:34", linerNotes: "" },
+        { title: "Uncertain Destiny", playtime: "6:25", linerNotes: "" },
+        { title: "The Machine", playtime: "4:37", linerNotes: "" },
+        { title: "Epilogue", playtime: "3:51", linerNotes: "" },
+      ],
+      images: {
+        frontcover: "a_or.jpg",
+        background: "a_or_bg.jpg",
+      },
+      links: [
+        {
+          title: "Bandcamp",
+          link: "https://music.dynatronsynth.com/album/origins",
+        },
+        {
+          title: "Spotify",
+          link: "https://open.spotify.com/album/28zy9ZKLmX2Fl6Pbs4mqbe",
+        },
+        {
+          title: "Youtube Music",
+          link: "https://music.youtube.com/playlist?list=OLAK5uy_ldY9SsNupvl0ODP4dMj6qyZs2VQlbbYeo",
+        },
+        {
+          title: "Apple Music",
+          link: "https://music.apple.com/us/album/origins/1584964796",
+        },
+        {
+          title: "Amazon Music",
+          link: "https://music.amazon.com/albums/B09FQ3K2M5",
+        },
+      ],
+      bcIframe: {
+        title: "Origins by Dynatron",
+        src: "https://bandcamp.com/EmbeddedPlayer/album=2335572078/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/artwork=small/transparent=true/",
+        link: "https://music.dynatronsynth.com/album/origins",
+      },
+    },
+    {
       title: "Surveillance",
-      id: "sur",
-      type: "Single",
+      id: "surveillance",
+      type: "single",
       format: "vinyl, digital",
       releaseDate: "December 1, 2020",
       label: "Blood Music / Electric Dream Records",
@@ -54,8 +116,8 @@ export default {
     },
     {
       title: "The Legacy Collection, Vol. II",
-      id: "tlcii",
-      type: "Compilation",
+      id: "the-legacy-collection-ii",
+      type: "compilation",
       format: "vinyl, cd, digital",
       releaseDate: "December 20, 2016",
       label: "Blood Music",
@@ -153,8 +215,8 @@ export default {
     },
     {
       title: "The Legacy Collection, Vol. I",
-      id: "tlci",
-      type: "Compilation",
+      id: "the-legacy-collection-i",
+      type: "compilation",
       format: "vinyl, cd, digital",
       releaseDate: "December 20, 2016",
       label: "Blood Music",
@@ -249,7 +311,7 @@ export default {
     },
     {
       title: "The Rigel Axiom",
-      id: "tra",
+      id: "the-rigel-axiom",
       type: "EP",
       format: "vinyl, digital",
       releaseDate: "November 4, 2016",
@@ -317,7 +379,7 @@ export default {
     },
     {
       title: "Aeternus",
-      id: "ae",
+      id: "aeternus",
       type: "album",
       format: "vinyl, cd, cassette, digital",
       releaseDate: "September 4, 2015",
@@ -413,7 +475,7 @@ export default {
     },
     {
       title: "Throttle Up",
-      id: "tu",
+      id: "throttle-up",
       type: "EP",
       format: "vinyl",
       releaseDate: "September 25, 2014",
@@ -477,7 +539,7 @@ export default {
     },
     {
       title: "Flashbacks",
-      id: "flb",
+      id: "flashbacks",
       type: "EP",
       format: "digital",
       releaseDate: "May 10, 2013",
@@ -550,7 +612,7 @@ export default {
     },
     {
       title: "Escape Velocity",
-      id: "ev",
+      id: "escape-velocity",
       type: "album",
       format: "vinyl, cd, cassette, digital",
       releaseDate: "November 22, 2012",
@@ -632,7 +694,7 @@ export default {
     },
     {
       title: "Fireburner",
-      id: "fib",
+      id: "fireburner",
       type: "EP",
       format: "digital",
       releaseDate: "September 8, 2012",
